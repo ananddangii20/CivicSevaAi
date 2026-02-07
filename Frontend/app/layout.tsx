@@ -13,7 +13,7 @@ const notoSans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "JanSeva AI - Civic Assistant",
+  title: "CivicSeva AI - Civic Assistant",
   description:
     "AI-powered civic assistance platform for reporting issues, finding government schemes, and accessing public services",
   generator: "v0.app",

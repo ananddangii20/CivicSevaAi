@@ -1,4 +1,4 @@
- const express = require('express');
+const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const cors = require('cors');
@@ -21,7 +21,8 @@ if (process.env.NODE_ENV !== 'production') app.use(morgan('dev'));
 
 connectDB();
 
-app.use('/api/auth', authRoutes);
+app.use("/api/auth", authRoutes);
+
 app.use('/api/complaints', complaintRoutes);
 app.use('/api/schemes', schemeRoutes);
 app.use('/api/chat', chatRoutes); // ⭐ NEW

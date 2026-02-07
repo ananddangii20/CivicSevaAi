@@ -366,14 +366,14 @@ export default function HelpPage() {
                       </Link>
                     </Button>
                     <Button variant="outline" className="h-auto gap-3 p-4 bg-transparent" asChild>
-                      <Link href="mailto:support@janseva.ai">
+                      <Link href="mailto:support@civicseva.ai">
                         <Mail className="h-5 w-5 text-primary" />
                         <div className="text-left">
                           <span className="block text-sm font-medium">
                             Email
                           </span>
                           <span className="text-xs text-muted-foreground">
-                            support@janseva.ai
+                            support@civicseva.ai
                           </span>
                         </div>
                       </Link>

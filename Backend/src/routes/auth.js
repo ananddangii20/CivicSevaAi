@@ -1,14 +1,12 @@
+// routes/auth.js
 const express = require("express");
+const { login, register, getCurrentUser } = require("../controllers/authController");
+const { protect } = require("../middleware/auth.middleware");
+
 const router = express.Router();
 
-const { register, login } = require("../controllers/authController");
-const { protect, isAdmin } = require("../middleware/auth.middleware");
-
-// Public routes
 router.post("/register", register);
 router.post("/login", login);
-
-// Admin-only route (optional, future)
-router.post("/register-officer", protect, isAdmin, register);
+router.get("/me", protect, getCurrentUser);
 
 module.exports = router;
